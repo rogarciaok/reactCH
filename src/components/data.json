@@ -1,0 +1,24 @@
+[
+    {
+"id":"1",
+        "title":"Volkswagen Gol",
+        "description":"Auto de la marca Volkswagen modelo 2021",
+        "price":500000,
+        "pictureurl":"https://fotos.perfil.com/2019/03/21/diez-datos-a-tener-en-cuenta-sobre-el-volkswagen-gol-2019-651415.jpg"
+    },
+    {
+"id":"2",
+        "title":"Ford Fiesta",
+        "description":"Auto de la marca Ford modelo 2021",
+        "price":600000,
+    "pictureurl":"https://automotiva.com.ar/wp-content/uploads/2017/11/Fiesta_2018-5.jpg"
+    },
+    {
+"id":"3",
+        "title":"Audi T1000",
+        "description":"Auto de la marca Audi modelo 2021",
+        "price":700000,
+    "pictureurl":"https://autoblog.com.ar/wp-content/uploads/2020/04/A3SEDAN1.jpg"
+    }
+
+]

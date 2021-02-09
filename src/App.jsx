@@ -1,6 +1,6 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import NavBar from "./components/navbar";
+import ItemListContainer from './containers/itemListContainer';
 // Did at  npm install  bootstrap react-bootstrap in project base directory
  import "bootstrap/dist/css/bootstrap.min.css";
 

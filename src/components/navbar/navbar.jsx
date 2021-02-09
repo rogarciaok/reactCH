@@ -1,6 +1,4 @@
 import React from 'react';
-import image from './1.png'
-import cart from './cart.gif'
 import { Navbar, NavItem, NavDropdown,MenuItem,Nav,Form,FormControl,Button} from 'react-bootstrap';
 import Carrito from './CartWidget.js';
 const NavBar = () => {
@@ -13,7 +11,7 @@ const NavBar = () => {
     <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="#home">Autos Guido Guidi</Navbar.Brand>
   <a class="navbar-brand" href="#">
-      <img src={image} alt="logo" width="80"></img>
+      <img src={./images/1.png}/>
   </a>
         <Nav className="mr-auto">
             <Nav.Link href="#Volkswagen">Volkswagen</Nav.Link>
