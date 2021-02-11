@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from "./components/navbar";
 import ItemListContainer from './containers/itemListContainer';
+import ItemDetailContainer from './containers/itemDetailContainer/itemDetailContainer.jsx';
 // Did at  npm install  bootstrap react-bootstrap in project base directory
  import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +16,8 @@ function App() {
 
 
      <ItemListContainer name={mensaje} />
+     <ItemDetailContainer/>
+
 
       <header className="App-header">
       </header>

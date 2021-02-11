@@ -8,11 +8,11 @@ const Carrito = () => {
 
           <Nav.Link href="#carrito"> Carrito de compras
               <p>
-  <a class="navbar-brand" href="#">
-      <img src={cart} alt="logo" width="80"></img>
-          </a>
+  				<a class="navbar-brand" href="#">
+      			<img src={cart} alt="logo" width="80"></img>
+          		</a>
               </p>
-              </Nav.Link>
+           </Nav.Link>
 
 
 

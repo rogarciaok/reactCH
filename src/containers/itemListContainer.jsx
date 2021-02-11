@@ -1,44 +1,45 @@
-import ItemCount from '../components/itemCount/itemCount';
-import ItemList from '../components/itemList/ItemList';
-import Item from '../components/item/Item';
-import jsonpack from '../components/data.json';
-import React, {useState,useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
+import './itemListContainer.scss';
+import ProductsList from '../../mocks/productsList/productsList.jsx';
+import ItemList from '../../components/itemList/itemList.jsx';
 
+const ItemListContainer = (props) => {
 
+    const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
+    const onAdd = (stock, contador) => {
+        return () => {
+            if(contador <= stock) {};
+        };
+    };
 
-const ItemListContainer = ({name}) => {
-    const[item,setItems]=useState([])
-    const call = new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve(jsonpack)
-        },2000)
-    })
+    useEffect(() => {
 
-    call.then(response=> {
-        setItems(response)
-    })
+        setIsLoading(true);
 
+        const PromesaItems = new Promise((resolve, reject) => {
+            setTimeout(() => resolve(ProductsList), 2000);
+        });
 
+        PromesaItems.then((result) => {
+            setProducts(result);
+            setIsLoading(false);
+        });
+    }, []);
+
+    if(isLoading) {
+        return (
+            <div className="d-flex justify-content-center">
+                <img src="/images/loading.gif" className="loading" alt="Loading"/>
+            </div>
+        );
+    };
 
     return (
-
-       <div name="test">
-
-
-
-    <div class="p-3 mb-2 bg-dark text-white">
-        {name}
-
-        <ItemList items={item}/>
-
-       </div>
-
-
-
-           </div>
-   )
-}
-
-
+        <>
+            <ItemList products={products}/>
+        </>
+    );
+};
 export default ItemListContainer;
